@@ -20,4 +20,10 @@ lib: libcptr$(DLEXT)
 $(LIBCPTR): libcptr.f90
 	$(FC) $(FFLAGS) -fPIC -shared -o $@ $<
 
-.PHONY: all lib
+clean:
+	rm -f libmodule.mod
+	rm -f storage.mod
+	rm -f cptr
+	rm -f $(LIBCPTR)
+
+.PHONY: all lib clean
