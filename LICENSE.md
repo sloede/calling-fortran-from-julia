@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2021 Michael Schlottke-Lakemper
+Copyright (c) 2021 Michael Schlottke-Lakemper and David A. Kopriva
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
