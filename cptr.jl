@@ -16,4 +16,4 @@ ccall((:enquirestuff, libcptr_path()), Cvoid, (Ref{Ptr{Cvoid}},), cptr)
 ccall((:clearstuff, libcptr_path()), Cvoid, (Ref{Ptr{Cvoid}},), cptr)
 
 # Print pointer value
-println(" ", cptr)
+println(" ", Int(cptr))
