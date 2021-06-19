@@ -17,3 +17,5 @@ ccall((:clearstuff, libcptr_path()), Cvoid, (Ref{Ptr{Cvoid}},), cptr)
 
 # Print pointer value
 println(" ", Int(cptr))
+
+ccall((:print_string, libcptr_path()), Cvoid, (Cstring,), "wololo😊")
