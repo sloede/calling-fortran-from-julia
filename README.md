@@ -28,6 +28,9 @@ which will give you the following output:
            4
            3           3           3           3
  38557344 
+ nchars =           10
+ f_string: wololo😊
 ```
-At the moment it is unclear, why the final output is not also a null pointer as
-in the pure Fortran example.
+At the moment it is unclear, why the third line is not also a null pointer as
+in the pure Fortran example. The additional lines (starting with `nchars = ...`
+are from a Julia-only test).
