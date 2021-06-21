@@ -30,6 +30,14 @@ which will give you the following output:
  38557344 
  nchars =           10
  f_string: wololo😊
+ Array length:            7
+           1 :            1
+           2 :            1
+           3 :            2
+           4 :            3
+           5 :            5
+           6 :            8
+           7 :           13
 ```
 At the moment it is unclear, why the third line is not also a null pointer as
 in the pure Fortran example. The additional lines (starting with `nchars = ...`

@@ -18,4 +18,9 @@ ccall((:clearstuff, libcptr_path()), Cvoid, (Ref{Ptr{Cvoid}},), cptr)
 # Print pointer value
 println(" ", Int(cptr))
 
+# Pass string from Julia to Fortran
 ccall((:print_string, libcptr_path()), Cvoid, (Cstring,), "wololo😊")
+
+# Pass array from Julia to Fortran
+values = Cint[1, 1, 2, 3, 5, 8, 13]
+ccall((:printintarray, libcptr_path()), Cvoid, (Ref{Cint}, Ref{Cint},), values, length(values))

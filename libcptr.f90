@@ -68,6 +68,20 @@
       PRINT *, s % a
       
    END SUBROUTINE enquireStuff
+!
+!//////////////////////////////////////////////////////////////////////// 
+! 
+   SUBROUTINE printIntArray(values, length) BIND(C) 
+      IMPLICIT NONE  
+      INTEGER(c_int), dimension(*) :: values
+      INTEGER(c_int)               :: length
+      INTEGER                      :: i
+      
+      print *, "Array length: ", length
+      do i=1,length
+        print *, i, ": ", values(i)
+      end do
+   END SUBROUTINE printIntArray
    
    END Module LibModule
 
